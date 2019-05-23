@@ -1,7 +1,5 @@
-# PRO
-关于科学上网的配置教程
-具体步骤：
-1.按窗口图标键+ R键>在运行中输入regedit.exe，单击“确定”，进入注册表编辑器；
+有关WINDOWS解决VPN连接错误的教程
+1.按窗口图标键+ R键>在运行中输入regedit.exe，单击“确定”，进入注册表编辑器;
 2.在注册表编辑器“页面的左侧导航树点开HKEY_LOCAL_MACHINE> SYSTEM> CurrentControlSet> Services> PolicyAgent；
 3.在右边空白处新建> DWORD值“，名称为AssumeUDPEncapsulationContextOnSendRule;
 4.右键单击“AssumeUDPEncapsulationContextOnSendRule”，选择“修改”，进入修改界面，修改值为2（表示可以与位于NAT设备后方的服务器建立安全关联）；
