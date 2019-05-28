@@ -4,3 +4,12 @@
 3.在右边空白处新建> DWORD值“，名称为AssumeUDPEncapsulationContextOnSendRule;
 4.右键单击“AssumeUDPEncapsulationContextOnSendRule”，选择“修改”，进入修改界面，修改值为2（表示可以与位于NAT设备后方的服务器建立安全关联）；
 5.重启电脑。
+
+
+第二种方法:
+
+查看服务是否开启
+
+windows+r 运行 输入 services.msc
+
+查找ipsec policy agent
