@@ -1,0 +1,8 @@
+点击左侧栏中的“系统”;“软件包”选项卡，在“OPKG配置”窗口中选择“配置”，然后在新页面的“发行版软件源”中填入如下代码后点击提交。
+src/gz 18.07_core <a href="http://downloads.pangubox.cn/pandorabox/18.07/targets/ralink/mt7621/packages" target="_blank">http://downloads.pangubox.cn/pandorabox/18.07/targets/ralink/mt7621/packages</a>
+src/gz 18.07_base <a href="http://downloads.pangubox.cn/pandorabox/18.07/packages/mipsel_1004kc_dsp/base" target="_blank">http://downloads.pangubox.cn/pandorabox/18.07/packages/mipsel_1004kc_dsp/base</a>
+src/gz 18.07_newifi <a href="http://downloads.pangubox.cn/pandorabox/18.07/packages/mipsel_1004kc_dsp/newifi" target="_blank">http://downloads.pangubox.cn/pandorabox/18.07/packages/mipsel_1004kc_dsp/newifi</a>
+src/gz 18.07_packages <a href="http://downloads.pangubox.cn/pandorabox/18.07/packages/mipsel_1004kc_dsp/packages" target="_blank">http://downloads.pangubox.cn/pandorabox/18.07/packages/mipsel_1004kc_dsp/packages</a>
+src/gz 18.07_luci <a href="http://downloads.pangubox.cn/pandorabox/18.07/packages/mipsel_1004kc_dsp/luci" target="_blank">http://downloads.pangubox.cn/pandorabox/18.07/packages/mipsel_1004kc_dsp/luci</a>
+src/gz 18.07_lafite <a href="http://downloads.pangubox.cn/pandorabox/18.07/packages/mipsel_1004kc_dsp/lafite" target="_blank">http://downloads.pangubox.cn/pandorabox/18.07/packages/mipsel_1004kc_dsp/lafite</a>
+src/gz 18.07_mtkdrv <a href="http://downloads.pangubox.cn/pandorabox/18.07/packages/mipsel_1004kc_dsp/mtkdrv</font>" target="_blank">http://downloads.pangubox.cn/pandorabox/18.07/packages/mipsel_1004kc_dsp/mtkdrv</a>
