@@ -1,0 +1,47 @@
+开始搭建ss
+连接到你的 vultr 服务器之后，接下来就可以使用几个命令让你快速搭建一个属于自己的 ss 服务器：
+
+输入以下命令，然后回车：
+yum install wget
+接着执行安装shadowsocks：
+wget –no-check-certificate -O shadowsocks.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks.sh
+获取 shadowsocks.sh 读取权限：
+chmod +x shadowsocks.sh
+设置你的 ss 密码和端口号：
+输入./shadowsocks.sh 2>&1 | tee shadowsocks.log后就可以设置密码和端口号了：
+
+
+使用 IPsec/L2TP 脚本搭建
+
+安装 wget ：
+
+yum install wget
+使用脚本：
+
+wget https://git.io/vpnsetup-centos -O vpnsetup.sh && sudo sh vpnsetup.sh
+稍等一会安装成功会提供一个 VPN 需要的信息：
+
+Server IP: xxx.xx.xx.xx
+IPsec PSK: xxxx
+Username: xxxx
+Password: xxxx
+
+Windos操作系统连接方法：
+添加注册表
+新建一个TXT文件，输入以下内容：
+
+Windows Registry Editor Version 5.00
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\RasMan\Parameters]
+"ProhibitIpSec"=dword:00000000
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PolicyAgent]
+"AssumeUDPEncapsulationContextOnSendRule"=dword:00000002
+另存为.reg格式的文件，然后双击。
+
+启动服务
+将以下服务全部设置为自动启用，要不然会连接不成功：
+
+IPsec Policy Agent
+Routing and Remote Access
+Remote Access Auto Connection Manager
+Remote Access Connection Manager
+Secure Socket Tunneling Protocol Service
